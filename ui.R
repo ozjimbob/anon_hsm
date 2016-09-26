@@ -15,12 +15,14 @@ shinyUI(fluidPage(
   # Sidebar with a slider input for number of bins
   sidebarLayout(
     sidebarPanel(
-      textInput("northing",
-                  "Northing",
-                  value=0),
+
       textInput("easting",
                 "Easting",
                 value=0),
+
+      textInput("northing",
+                  "Northing",
+                  value=0),
       actionButton("addpoint","Add Point")
     ),
 
