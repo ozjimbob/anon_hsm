@@ -16,14 +16,11 @@ shinyUI(fluidPage(
   sidebarLayout(
     sidebarPanel(
 
-      textInput("easting",
-                "Easting",
-                value=0),
-
-      textInput("northing",
-                  "Northing",
-                  value=0),
-      actionButton("addpoint","Add Point")
+	fileInput('file1', 'Choose CSV File',
+                accept=c('text/csv', 
+			'text/comma-separated-values,text/plain', 
+			'.csv')),
+      actionButton("addpoint","Submit Points")
     ),
 
 
